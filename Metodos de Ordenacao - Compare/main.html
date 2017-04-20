@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/sheets.css">
+  <title>Gráficos</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="main.html"><h1>Comparação de desempenho dos métodos de ordenação</h1></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <div id="container" class="container center-block text-center">
+
+    <header class="title">
+      <button onclick="prev()" type="button" name="button">Prev</button><h1 id="ordenacao">Bubble Sort - Comparações</h1>
+      <button onclick="next()" type="button" name="button">Next</button>
+    </header>
+
+    <section class ="tamanho">
+      <div class ="grid">
+        <div id = "bubble">
+          <canvas data-ordenacao="Bubble Sort - Comparações" class = "col-xs-12" id="Grafico1"></canvas>
+          <canvas data-ordenacao="Bubble Sort - Trocas" class = "hidden col-xs-12" id="Grafico2"></canvas>
+          <canvas data-ordenacao="Bubble Sort - Tempo" class = "hidden col-xs-12" id="Grafico3"></canvas>
+        </div>
+        <div id = "insertion">
+          <canvas data-ordenacao="Insertion Sort - Comparações" class = "hidden col-xs-12" id="Grafico4"></canvas>
+          <canvas data-ordenacao="Insertion Sort - Trocas" class = "hidden col-xs-12" id="Grafico5"></canvas>
+          <canvas data-ordenacao="Insertion Sort - Tempo" class = "hidden col-xs-12" id="Grafico6"></canvas>
+        </div>
+        <div id = "selection">
+          <canvas data-ordenacao="Selection Sort - Comparações" class = "hidden col-xs-12" id="Grafico7"></canvas>
+          <canvas data-ordenacao="Selection Sort - Trocas" class = "hidden col-xs-12" id="Grafico8"></canvas>
+          <canvas data-ordenacao="Selection Sort - Tempo" class = "hidden col-xs-12" id="Grafico9"></canvas>
+        </div>
+        <div id = "merge">
+          <canvas data-ordenacao="Merge Sort - Comparações" class = "hidden col-xs-12" id="Grafico10"></canvas>
+          <canvas data-ordenacao="Merge Sort - Trocas" class = "hidden col-xs-12" id="Grafico11"></canvas>
+          <canvas data-ordenacao="Merge Sort - Tempo" class = "hidden col-xs-12" id="Grafico12"></canvas>
+        </div>
+        <div id = "Quick">
+          <canvas data-ordenacao="Quick Sort - Comparações" class = "hidden col-xs-12" id="Grafico13"></canvas>
+          <canvas data-ordenacao="Quick Sort - Trocas" class = "hidden col-xs-12" id="Grafico14"></canvas>
+          <canvas data-ordenacao="Quick Sort - Tempo" class = "hidden col-xs-12" id="Grafico15"></canvas>
+        </div>
+        <div id = "Geral">
+          <canvas data-ordenacao="Geral - Comparações" class = "hidden col-xs-12" id="Grafico16"></canvas>
+          <canvas data-ordenacao="Geral - Trocas" class = "hidden col-xs-12" id="Grafico17"></canvas>
+          <canvas data-ordenacao="Geral - Tempo" class = "hidden col-xs-12" id="Grafico18"></canvas>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <section>
+      <span class="grupo gp-titulo">Grupo:</span>
+      <span>&nbsp</span>
+      <span class="grupo">Anderson Merten</span>
+      <span>&nbsp</span>
+      <span class="grupo">Bianca Quintaes</span>
+      <span>&nbsp</span>
+      <span class="grupo">William Parlow Nichelatti</span>
+    </section>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./js/jquery-3.2.1.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="./js/dados.js"></script>
+  <script src="./js/javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+</html>

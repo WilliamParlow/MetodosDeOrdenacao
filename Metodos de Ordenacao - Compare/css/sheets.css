@@ -1,0 +1,119 @@
+html {
+  font-size: 160%;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 4px 12px;
+  background-color: rgb(0, 127, 255);
+  color: #FFF !important;
+  font-weight: bold !important;
+  transition: .3s;
+}
+
+.fadeOut {
+  transition: .5s;
+  opacity: 0;
+}
+
+.fadeIn {
+  transition: .5s;
+  opacity: 1;
+}
+
+button:hover {
+  transition: .3s;
+  background-color: rgb(0, 80, 160);
+}
+
+.tamanho {
+  width: 80% !important;
+  height: auto !important
+}
+
+.grid canvas, section{
+  margin: auto;
+  position: relative;
+  float: none;
+}
+
+#container {
+  padding: 0 0 100px 0 !important;
+  height: auto !important;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid h4{
+  text-align: center;
+  position: relative;
+}
+
+.navbar-brand h1 {
+  font-family: verdana, serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+}
+.navbar-brand p span {
+  vertical-align: middle;
+}
+
+#header-nav {
+  display: flex;
+  align-items: center;
+}
+
+#header-nav * {
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+}
+
+footer section {
+  width: 100%;
+  height: auto;
+  padding: 1ch;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+.grupo {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 4px solid #900;
+  border-radius: 7px;
+}
+
+.separator {
+  border: 1px solid #000;
+  border-radius: 1000px;
+  opacity: .5;
+  width: 100%;
+  margin: .5ch 0;
+}
